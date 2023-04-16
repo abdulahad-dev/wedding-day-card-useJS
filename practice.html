@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS Introduction</title>
+    <style>
+        .merrageCardContainer {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            background-color: #f7e8e8;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+
+        .card img {
+            width: 45%;
+            margin: auto;
+            display: flex;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px #cafbfb;
+        }
+
+        .borderimg {
+            border: 20px solid transparent;
+            padding: 15px;
+            border-image: url(img/download.png) round;
+            border-image-slice: 20%;
+        }
+
+        #schedule {
+            display: none;
+        }
+
+        #marriage-day {
+            display: none;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        footer p {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="merrageCardContainer">
+        <div class="card borderimg">
+            <img src="img/Female.png" alt="">
+            <div class="container">
+                <h2><b>কনে পরিচিতি</b></h2>
+                <h3><strong>হামিদা বেগম লনি</strong></h3>
+                <p>পিতাঃ হুসাইন আহমদ</p>
+                <p>মাতাঃ ফাতেমা বেগম সপ্না</p>
+                <p>গ্রামঃ নৈখাই ( মাঝপাড়া )</p>
+                <p>ডাকঘরঃ খালোমুখ বাজার</p>
+                <p>থানাঃ মোগলাবাজার</p>
+                <p>জেলাঃ সিলেট ।</p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="container">
+                <button onclick="document.getElementById('schedule').style.display = 'block' ">অনুষ্ঠানসূচী</button>
+                <div id="schedule">
+                    <p>বিয়ে ঃ ১১ই মে ২০২৩ ইং, রোজ বৃহস্পতিবার</p>
+                    <p>প্রীতিভোজ ঃ বেলা ২.০০ ঘটিকা</p>
+                    <p>স্থান ঃ হাজী মখদ্দস আলী কমিউনিটি সেন্টার</p>
+                    <p>খালোমুখ বাজার, ফেঞ্চুগঞ্জ রোড, ‍সিলেট ।</p>
+                </div>
+                <button onclick="document.getElementById('marriage-day').style.display = 'block' ">Show</button>
+                <div id="marriage-day">
+                    <h2>Happy Marriage Day</h2>
+                    <h3>💐❤️💐</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card borderimg">
+            <img src="img/Male.jpg" alt="">
+            <div class="container">
+                <h2><b>বর পরিচিতি</b></h2>
+                <h3><strong>মোঃ কবির উদ্দীন</strong></h3>
+                <p>পিতাঃ মরহুম শফিকুর রহমান</p>
+                <p>মাতাঃ আছকিরুন নেছা</p>
+                <p>গ্রামঃ ইলাশপুর</p>
+                <p>ডাকঘরঃ ফেঞ্চুগঞ্জ</p>
+                <p>থানাঃ ফেঞ্চুগঞ্জ</p>
+                <p>জেলাঃ সিলেট ।</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by @Md. Abdul Ahad</p>
+    </footer>
+</body>
+
+</html>

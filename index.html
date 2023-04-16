@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>What Can JavaScript Do ?</h2>
+    <h3 id="demo">JavaScript can change HTML content.</h3>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = " Hello JavaScript" '>Click Me!</button>
+    <hr>
+
+
+
+    <h3>JavaScript Can Change HTML Attribute Values</h3>
+    <button onclick="document.getElementById('profileImage').src = 'img/Male.jpg' ">Show on Male Profile</button>
+
+    <img id="profileImage" src="img/Male.jpg" alt="">
+
+    <button onclick="document.getElementById('profileImage').src = 'img/Female.png' ">Show on Female Profile</button>
+    <hr>
+
+    <h3 id="changeStyle">JavaScript can change the style of an HTML element.</h3>
+    <button
+        onclick="document.getElementById('changeStyle').style.color = 'pink',document.getElementById('changeStyle').style.fontSize = '50px' ">Click
+        Me</button>
+    <hr>
+    <h3>JavaScript Can Hide HTML Elements</h3>
+    <h4>Hide Facebook Account : <a href="#" id="showOrHideElement">https://www.facebook.com</a></h4>
+    <button onclick="document.getElementById('showOrHideElement').style.display = 'none' ">Hide FB Account</button>
+
+    <button onclick="document.getElementById('showOrHideElement').style.display = 'block' ">Show FB Account</button>
+
+
+
+
+
+
+
+</body>
+
+</html>
