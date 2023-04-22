@@ -54,8 +54,13 @@
             font-size: 40px;
         }
 
+        .shedule-card {
+            width: 50%;
+        }
+
         footer p {
-            align-items: center;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -76,7 +81,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card shedule-card">
 
             <div class="container">
                 <button onclick="document.getElementById('schedule').style.display = 'block' ">অনুষ্ঠানসূচী</button>
@@ -87,6 +92,7 @@
                     <p>খালোমুখ বাজার, ফেঞ্চুগঞ্জ রোড, ‍সিলেট ।</p>
                 </div>
                 <button onclick="document.getElementById('marriage-day').style.display = 'block' ">Show</button>
+                <button onclick="document.getElementById('marriage-day').style.display = 'none' ">Hide</button>
                 <div id="marriage-day">
                     <h2>Happy Marriage Day</h2>
                     <h3>💐❤️💐</h3>
